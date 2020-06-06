@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="/xsd/config.xsd">
+
+ 	<data id="loginAgency">
+		<input id="userNYCId" value="login.userNYCId.agency" />
+		<input id="userNYCPassword" value="login.userNYCPassword.agency" />
+		<click id="login" />
+		<validate groupids="error" />
+		<wait time="2000" />
+	</data> 
+		 <data id="login">
+		<input id="email" value="login.username" />
+		<input css="[type*='password']" value="login.password" />
+		<click id="login" />
+		<!-- <validate groupids="error" /> -->
+		<wait time="1000" />
+ </data>
+<!-- 	<data id="loginCity">
+		<input id="userNYCId" value="login.city.userNYCId" />
+		<input id="userNYCPassword" value="login.city.userNYCPassword" />
+		<click id="login" />
+		<validate groupids="error" />
+		<wait time="1000" />
+	</data>
+	<validation groupid="error" id="roadmapValidation">
+		<element css=".failed" exists="false" />
+	</validation> -->
+</config>

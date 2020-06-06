@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flows>
+	<flow id="submitProposal" datasheet="data/data.xlsx" row-range="2-11">
+		<chart id="login" xml="login.xml" />
+		<chart id="procurementTab" xml="homePage.xml" />
+		<chart id="chooseProcurement" xml="procurement.xml" />
+		<chart id="createProposal" xml="proposal.xml" />
+		<chart id="updateDocuments" xml="proposal.xml" />
+		<chart id="submitProposal" xml="proposal.xml" />
+	</flow>
+
+	<flow id="businessapplicationapproval" datasheet="Features/Book1.xlsx">
+		<chart id="login" xml="login.xml" />
+		<chart id="logout" xml="logout.xml" />
+<!-- 		<chart id="filterTaskReview" xml="BusinessApplicationApproval.xml" />
+		<chart id="filterAssignBasic" xml="BusinessApplicationApproval.xml" />
+		<chart id="filterAssignBoard" xml="BusinessApplicationApproval.xml" />
+		<chart id="filterAssignFilings" xml="BusinessApplicationApproval.xml" />
+		<chart id="filterAssignPolicies" xml="BusinessApplicationApproval.xml" />
+		<chart id="approvetaskBasic" xml="BusinessApplicationApproval.xml" />
+		<chart id="approvetaskBooard" xml="BusinessApplicationApproval.xml" />
+		<chart id="approvetaskFilings" xml="BusinessApplicationApproval.xml" />
+		<chart id="approvetaskPolicies" xml="BusinessApplicationApproval.xml" /> -->
+	</flow>
+
+	<flow id="approveserviceapplication" datasheet="data/approveservicedata.xlsx">
+		<chart id="login" xml="login.xml" />
+		<chart id="inbox" xml="homePage.xml" />
+		<chart id="assignServiceApplicationTask" xml="ApproveService.xml" />
+		<chart id="approveServiceApplicationTask" xml="ApproveService.xml" />
+	</flow>
+
+	<flow id="serviceapplicationprovider" datasheet="data/serviceapplicationdata.xlsx">
+		<chart id="login" xml="login.xml" />
+		<chart id="applicationTab" xml="homePage.xml" />
+		<chart id="addService" xml="SubmitApplication.xml" />
+		<chart id="selectService" xml="SubmitApplication.xml" />
+		<chart id="reviewService" xml="SubmitApplication.xml" />
+		<chart id="addSupportiveInformation" xml="SubmitApplication.xml" />
+		<chart id="questions" xml="SubmitApplication.xml" />
+		<chart id="documentUpload" xml="SubmitApplication.xml" />
+		<chart id="specialization" xml="SubmitApplication.xml" />
+		<chart id="submitApplication" xml="SubmitApplication.xml" />
+	</flow>
+
+	<flow id="addprocurement" datasheet="data/procurementdata.xlsx">
+		<chart id="login" xml="login.xml" />
+		<chart id="procurementTab" xml="homePage.xml" />
+		<chart id="addProcurement" xml="Procurement.xml" />
+		<chart id="procurementSummary" xml="Procurement.xml" />
+		<chart id="selectService" xml="Procurement.xml" />
+		<chart id="approvedProviders" xml="Procurement.xml" />
+		<chart id="publishProcurement" xml="Procurement.xml" />
+		<chart id="releaseDetails_RFP" xml="RFP_Release.xml" />
+	</flow>
+
+	<flow id="addcontract" datasheet="data/contractlaunchdata.xlsx">
+		<chart id="login" xml="login.xml" />
+		<chart id="financialTab" xml="homePage.xml" />
+		<chart id="fillContract" xml="ContractLaunch.xml" />
+		<chart id="logout" xml="logout.xml" />
+		<chart id="loginAgency" xml="login.xml" />
+		<chart id="inbox" xml="homePage.xml" />
+		<chart id="assignContract" xml="ContractLaunch.xml" />
+		<chart id="approveContract" xml="ContractLaunch.xml" />
+		<chart id="CCOF" xml="CCOFApproved.xml" />
+	</flow>
+
+	<flow id="CCOFApproved" datasheet="data/ccofdata.xlsx">
+		<chart id="login" xml="login.xml" />
+		<chart id="inbox" xml="homePage.xml" />
+		<chart id="CCOF" xml="CCOFApproved.xml" />
+	</flow>
+
+	<flow id="BusinessApplicationsSubmit" datasheet="data/addbusinessdata.xlsx">
+		<chart id="login" xml="login.xml" />
+		<chart id="applicationtab" xml="homePage.xml" />
+		<chart id="ApplicationsTab" xml="BusinessApplication.xml" />
+		<chart id="submitApp" xml="homePage.xml" />
+		<chart id="selectservice" xml="BusinessApplication.xml" />
+		<chart id="review" xml="BusinessApplication.xml" />
+		<chart id="addsupportiveinformation" xml="BusinessApplication.xml" />
+		<chart id="questions" xml="BusinessApplication.xml" />
+		<chart id="document" xml="BusinessApplication.xml" />
+		<chart id="specialization" xml="BusinessApplication.xml" />
+		<chart id="submit" xml="BusinessApplication.xml" />
+	</flow>
+	
+	<flow id="missingprofile" datasheet="data/missingprofiledata.xlsx">
+		<chart id="login" xml="login.xml" />
+		<chart id="addProfileData" xml="MissingProfile.xml" />
+		<chart id="logout" xml="logout.xml" />
+		<chart id="loginCity" xml="login.xml" />
+		<chart id="approveProfile" xml="MissingProfile.xml" />
+	</flow>
+
+	<flow id="registration" datasheet="data/Registration.xlsx">
+		<chart id="fillNycData" xml="Registration.xml" />
+		<chat id="logout" xml="logout.xml" />
+		<chart id="login" xml="login.xml" />
+		<chart id="addProfileData" xml="MissingProfile.xml" />
+		<chart id="logout" xml="logout.xml" />
+		<chart id="loginCity" xml="login.xml" />
+		<chart id="approveProfile" xml="MissingProfile.xml" />
+	</flow>
+</flows>
